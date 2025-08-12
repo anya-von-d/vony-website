@@ -63,3 +63,32 @@ Preferred communication style: Simple, everyday language.
 - **SSL Certificate**: Recommended for trust and SEO in financial services
 
 The architecture is designed to be easily extensible into a full-stack application when backend functionality for user registration, loan management, and payment processing is needed.
+
+## Recent Changes (August 12, 2025)
+
+### Content Focus Update
+- Completely rewrote website content to focus on Vony's actual purpose: personal lending between friends and family
+- Updated hero section: "Lending Money to Friends Made Simple" 
+- Replaced generic P2P lending language with specific use cases: dinner bills, rent help, car repairs
+- Modified features section to showcase real-life lending scenarios
+- Updated call-to-action buttons to link directly to Vony app: https://app--vony-2307218f.base44.app
+
+### Navigation Improvements
+- Added responsive navigation spacing: 4rem on desktop (1200px+), 3rem on tablets (992px-1199px)
+- Maintained mobile-friendly spacing for smaller screens
+
+### Mobile Optimization
+- Added comprehensive mobile responsiveness with specific breakpoints for tablets (991px) and phones (576px)
+- Implemented mobile-specific typography scaling: titles from 2.5rem to 2rem on mobile
+- Enhanced touch targets: minimum 44px height for buttons following iOS guidelines
+- Improved mobile form experience: larger touch targets, proper focus states, prevented iOS zoom
+- Added mobile-specific spacing and padding adjustments throughout
+- Enhanced feature cards with shadows and better mobile layout
+- Optimized container padding and image sizes for mobile screens
+
+### Technical Fixes
+- Fixed JavaScript syntax errors that were causing console issues
+- Resolved template literal compatibility issues in script.js
+- Enhanced cross-device compatibility and performance
+
+The website now properly represents Vony as a friends and family lending platform with excellent mobile user experience.
