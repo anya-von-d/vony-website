@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vony - Peer-to-Peer Micro-Lending Platform</title>
+  <meta name="description" content="Vony connects lenders and borrowers directly through our secure peer-to-peer micro-lending platform. Simple, transparent, and trusted.">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes">
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo/vony-logo.svg">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
+
+        e.preventDefault();
+
+        const duration = 600;
+        const start = window.scrollY;
+        const end = target.getBoundingClientRect().top + window.scrollY;
+        const startTime = performance.now();
+
+        function scroll() {
+          const now = performance.now();
+          const time = Math.min(1, (now - startTime) / duration);
+          const easing = 1 - Math.pow(1 - time, 3);
+          window.scrollTo(0, start + (end - start) * easing);
+
+          if (time < 1) {
+            requestAnimationFrame(scroll);
+          }
+        }
+
+        requestAnimationFrame(scroll);
+      });
+    });
+  });
+</script>
+
+<body>
+  <!-- loading section start -->
+  <div class="fullpage_loader">
+    <div class="loader"></div>
+  </div>
+  <!-- loading section end -->
+
+  <!-- header section start -->
+  <div id="header-fixed-height"></div>
+  <header class="header-section w-100" id="sticky-header">
+    <nav class="navbar p-0 navbar-expand-xl d-none d-xl-flex">
+      <div class="container px-0">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo/vony-logo.svg" alt="Vony Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about-us">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#how-it-works">How it Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          </ul>
+          <div class="join-with-us">
+            <a href="contact.html" class="join-with-us-btn">
+              <span class="btn-wrap">
+                <span class="text-one">Get Started</span>
+                <span class="text-two">Get Started</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile navbar start -->
+    <div class="mobile-menu-area d-block d-xl-none">
+      <div class="mobile-topbar">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo/vony-logo.svg" alt="Vony Logo" style="height: 35px;"></a>
+            </div>
+            <div class="bars">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu-overlay"></div>
+      <div class="mobile-menu-main">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo/vony-logo.svg" alt="Vony Logo" style="height: 35px;"></a>
+        </div>
+        <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
+        
+        <div class="menu-body">
+          <div class="menu-list">
+            <ul class="list-unstyled">
+              <li class="sub-mobile-menu">
+                <a href="#about-us">About</a>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#how-it-works">How it Works</a>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#features">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="join-with-us">
+          <a href="contact.html" class="join-with-us-btn text-decoration-underline">
+            <span class="btn-wrap">
+              <span class="text-one">Get Started</span>
+              <span class="text-two">Get Started</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- mobile navbar end -->
+  </header>
+  <!-- header section end -->
+
+  <!-- main area start -->
+  <main class="position-relative">
+    
+    <!-- hero section start -->
+    <section class="banner-section-three" style="padding-bottom: 10rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="text">
+              <div class="top-title position-relative">
+                <h1 class="title split-text">
+                  Direct Peer-to-Peer Micro-Lending Made Simple
+                </h1>
+              </div>
+              <p>Connect directly with lenders and borrowers through our secure, minimalist platform. Experience transparent micro-lending with clear terms and real-time tracking.</p>
+              <div class="hero-buttons mt-4">
+                <a href="contact.html" class="theme-btn position-relative me-3">Start Lending
+                  <span class="d-flex justify-content-center align-items-center position-absolute top-0">
+                    <img src="img/icons/icon-up-right.svg" alt="arrow"></span>
+                </a>
+                <a href="contact.html" class="theme-btn theme-btn-light position-relative">Get a Loan
+                  <span class="d-flex justify-content-center align-items-center position-absolute top-0">
+                    <img src="img/icons/icon-up-right.svg" alt="arrow"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6"> 
+            <div class="image position-relative">
+              <div class="img reveal zoom-out">
+                <img src="img/images/vony-hero.svg" alt="Vony Platform" class="img-fluid w-100">
+              </div>
+              <div class="counter-info position-absolute start-50 translate-middle-x d-flex justify-content-center align-items-center">
+                <p class="mb-0 display-6 fw-bold text-white">Secure & Trusted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- trust indicators section start -->
+    <section class="text-slider-section text-slider-section-two"
+    style="transform: rotate(-1deg); margin-top: 0; margin-bottom: 0; padding-bottom: 2rem; background-color: #5EC47E;">
+      <div class="slider-main d-flex align-items-center" style="background-color: #5EC47E;">
+        <div class="slider-item d-flex align-items-center" style="background-color: #5EC47E;">
+          <h4 class="title" style="color: #ffffff;">Bank-Level Security</h4>
+          <h4 class="title" style="color: #ffffff;">Direct P2P Connection</h4>
+          <h4 class="title" style="color: #ffffff;">Real-time Tracking</h4>
+        </div>
+        <div class="slider-item d-flex align-items-center" style="background-color: #5EC47E;">
+          <h4 class="title" style="color: #ffffff;">Bank-Level Security</h4>
+          <h4 class="title" style="color: #ffffff;">Direct P2P Connection</h4>
+          <h4 class="title" style="color: #ffffff;">Real-time Tracking</h4>
+        </div>
+      </div>
+    </section>
+    <!-- trust indicators section end -->
+
+    <!-- about section start -->
+    <section id="about-us" class="feature-section feature-section-three content" style="margin-top: 0; padding-top: 6rem;">
+      <div class="container px-0">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="section-title-block text-center">
+              <h3 class="section-title split-text right">Connecting People Through Trusted Micro-Lending</h3>
+              <p>Vony eliminates traditional banking barriers by connecting lenders and borrowers directly. Our platform emphasizes transparency, security, and simplicity in every transaction.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- how it works section start -->
+    <section id="how-it-works" class="services-section content" style="border: none; padding-top: 5rem;">
+      <div class="container services-container px-0 position-relative" style="border: none;">
+        <div class="services-top-info" style="border: none;">
+          <div class="row" style="border: none;">
+            <div class="col-md-8 mx-auto" style="border: none;">
+              <div class="section-title-block text-center" style="border: none;">
+                <h5 class="section-sub-title">How It Works</h5>
+                <h3 class="section-title split-text right">Simple Steps to Start Lending or Borrowing</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-main" style="border: none;">
+          <div class="services-item fade-up" style="border: none;">
+            <div class="d-flex justify-content-between gap-4 row-gap-3 flex-wrap align-items-center w-100">
+              <h5 class="number w-100">01</h5>
+              <h3 class="title w-100">Account Creation</h3>
+              <p class="des w-100">Sign up and create your secure profile. Verify your identity and link your bank account for seamless transactions.</p>
+              <div class="icon w-100">
+                <img src="img/icons/icon-up-right-2.svg" alt="step arrow">
+              </div>
+            </div>
+          </div>
+          <div class="services-item fade-up" style="border: none;">
+            <div class="d-flex justify-content-between gap-4 row-gap-3 flex-wrap align-items-center w-100">
+              <h5 class="number w-100">02</h5>
+              <h3 class="title w-100">Loan Offer</h3>
+              <p class="des w-100">Lenders specify loan amount, payment schedule, interest rate, and repayment period. Borrowers receive offers instantly.</p>
+              <div class="icon w-100">
+                <img src="img/icons/icon-up-right-2.svg" alt="step arrow">
+              </div>
+            </div>
+          </div>
+          <div class="services-item fade-up" style="border: none;">
+            <div class="d-flex justify-content-between gap-4 row-gap-3 flex-wrap align-items-center w-100">
+              <h5 class="number w-100">03</h5>
+              <h3 class="title w-100">Loan Acceptance</h3>
+              <p class="des w-100">Borrowers review offer details and complete a simple in-app contract agreement to proceed with the loan terms.</p>
+              <div class="icon w-100">
+                <img src="img/icons/icon-up-right-2.svg" alt="step arrow">
+              </div>
+            </div>
+          </div>
+          <div class="services-item fade-up" style="border: none;">
+            <div class="d-flex justify-content-between gap-4 row-gap-3 flex-wrap align-items-center w-100">
+              <h5 class="number w-100">04</h5>
+              <h3 class="title w-100">Active Loan & Repayment</h3>
+              <p class="des w-100">Funds transfer securely between accounts. Both parties track repayment progress in real-time through the app.</p>
+              <div class="icon w-100">
+                <img src="img/icons/icon-up-right-2.svg" alt="step arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- how it works section end -->
+
+    <!-- features section start -->
+    <section id="features" class="feature-section-two content" style="padding-top: 6rem;">
+      <div class="container px-0">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="section-title-block text-center">
+              <h5 class="section-sub-title">Key Features</h5>
+              <h3 class="section-title split-text right">Why Choose Vony for Micro-Lending</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-4">
+            <div class="feature-item text-center">
+              <div class="icon mb-4">
+                <img src="img/icons/handshake-icon.svg" alt="Direct P2P" style="width: 60px; height: 60px;">
+              </div>
+              <h4 class="title">Direct P2P Connection</h4>
+              <p>Skip traditional banks and connect directly with real people. Build personal lending relationships with complete transparency.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-item text-center">
+              <div class="icon mb-4">
+                <img src="img/icons/security-icon.svg" alt="Security" style="width: 60px; height: 60px;">
+              </div>
+              <h4 class="title">Bank-Level Security</h4>
+              <p>Your data and transactions are protected with enterprise-grade encryption and secure banking integrations.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-item text-center">
+              <div class="icon mb-4">
+                <img src="img/icons/tracking-icon.svg" alt="Tracking" style="width: 60px; height: 60px;">
+              </div>
+              <h4 class="title">Real-time Tracking</h4>
+              <p>Monitor loan progress, payments, and balances in real-time. Stay informed every step of the way.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features section end -->
+
+    <!-- call to action section start -->
+    <section class="cta-section" style="padding: 6rem 0; background-color: #f8f9fa;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="mb-4">Ready to Start Your Lending Journey?</h2>
+            <p class="mb-5">Join thousands of users who trust Vony for secure, transparent peer-to-peer micro-lending.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="theme-btn position-relative me-3">
+                Start as Lender
+                <span class="d-flex justify-content-center align-items-center position-absolute top-0">
+                  <img src="img/icons/icon-up-right.svg" alt="arrow">
+                </span>
+              </a>
+              <a href="contact.html" class="theme-btn theme-btn-light position-relative">
+                Apply for Loan
+                <span class="d-flex justify-content-center align-items-center position-absolute top-0">
+                  <img src="img/icons/icon-up-right.svg" alt="arrow">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- call to action section end -->
+
+  </main>
+  <!-- main area end -->
+
+  <!-- back to top button start -->
+  <button class="scroll-to-top position-fixed">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M6 15l6 -6l6 6" /></svg>
+  </button>
+  <!-- back to top button end -->
+
+  <!-- footer section start -->
+  <footer class="footer-section-five position-relative overflow-hidden">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-sm-6">
+          <div class="footer-widget">
+            <img src="img/logo/vony-logo.svg" alt="Vony Logo" class="mb-4" style="height: 35px;">
+            <p class="mb-4">Connecting people through trusted peer-to-peer micro-lending. Simple, secure, and transparent.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="footer-widget contact-info">
+            <h5 class="widget-title mb-4">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="tel:+1-650-924-7120">+1 (650) 924-7120</a></li>
+              <li><a href="mailto:hello@vony.com">hello@vony.com</a></li>
+            </ul>
+            <p>Building trust in micro-lending, one connection at a time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2025 Vony. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- JS here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
