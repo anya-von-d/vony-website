@@ -332,6 +332,17 @@ img {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(86deg) brightness(119%) contrast(119%);
 }
 
+/* Section title centering */
+.section-title-block {
+  text-align: center !important;
+}
+
+.section-title, .section-sub-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 /* Footer styling */
 .footer-section-five {
   background-color: #1a1a1a !important;
