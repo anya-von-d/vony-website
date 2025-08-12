@@ -73,9 +73,29 @@ The architecture is designed to be easily extensible into a full-stack applicati
 - Modified features section to showcase real-life lending scenarios
 - Updated call-to-action buttons to link directly to Vony app: https://app--vony-2307218f.base44.app
 
-### Navigation Improvements
+### Navigation Structure Finalized
+- Removed "About Us" from navigation menu for cleaner focus
+- Final navigation order: How It Works → Key Features → Use Cases → Contact Us
+- Changed main CTA from "Contact us" to "Get Started" linking to Vony app
+- Added "Contact Us" as regular nav item next to "Use Cases"
 - Added responsive navigation spacing: 4rem on desktop (1200px+), 3rem on tablets (992px-1199px)
 - Maintained mobile-friendly spacing for smaller screens
+
+### Section Restructuring
+- Created distinct "Key Features" section covering technical functionality:
+  - Custom Payment Plans: Flexible payment schedules (weekly/bi-weekly/monthly)
+  - Interest Rate Options: Choice to lend with or without interest
+  - Repayment Periods: Customizable timeframes from days to years
+  - Digital Contracts: Automatic creation of legally-binding agreements
+- Renamed practical scenarios section to "Use Cases": Split Dinner Bills, Help with Rent, Urgent Car Repairs
+- Clear separation between technical features and practical applications
+
+### Footer Redesign
+- Implemented four-column layout: Logo + CTA, Address, Phone, Email
+- Added company description under logo: "Connecting people through trusted peer-to-peer micro-lending. Simple, secure, and transparent."
+- Single "Contact Us" button positioned under logo and description
+- Green headers ("Address", "Phone", "Email") with white content on dark background
+- Contact information: San Francisco, CA; +1 (650) 924-7120; hello@vony.com
 
 ### Mobile Optimization
 - Added comprehensive mobile responsiveness with specific breakpoints for tablets (991px) and phones (576px)
