@@ -180,7 +180,7 @@ img {
 .theme-btn {
   background: var(--vony-primary);
   color: var(--vony-secondary);
-  padding: 15px 30px;
+  padding: 15px 50px 15px 30px;
   border-radius: 30px;
   font-weight: 500;
   border: none;
@@ -220,6 +220,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition);
+}
+
+.theme-btn span img {
+  transition: var(--transition);
+}
+
+.theme-btn:hover span img {
+  transform: rotate(45deg);
 }
 
 /* Mobile Menu */
