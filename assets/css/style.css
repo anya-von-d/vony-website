@@ -627,6 +627,10 @@ img {
   background: var(--vony-light-gray);
 }
 
+.services-main {
+  margin-top: 3rem;
+}
+
 .services-item {
   background: var(--vony-secondary);
   border-radius: 15px;
@@ -634,6 +638,9 @@ img {
   margin-bottom: 2rem;
   box-shadow: 0 5px 20px var(--vony-shadow);
   transition: var(--transition);
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .services-item:hover {
