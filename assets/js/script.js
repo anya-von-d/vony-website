@@ -88,7 +88,8 @@
                 var viewportTop = $(window).scrollTop();
                 var viewportBottom = viewportTop + $(window).height();
 
-                if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                // Trigger animation when element is 150px before entering viewport
+                if (elementTop < viewportBottom - 150) {
                     $(this).addClass('animate');
                 }
             });
@@ -102,7 +103,8 @@
                 var viewportTop = $(window).scrollTop();
                 var viewportBottom = viewportTop + $(window).height();
 
-                if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                // Trigger animation when element is 150px before entering viewport
+                if (elementTop < viewportBottom - 150) {
                     $(this).addClass('animate');
                 }
             });

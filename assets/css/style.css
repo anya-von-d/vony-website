@@ -742,7 +742,7 @@ select.form-control {
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
-  transition: var(--transition-slow);
+  transition: all 0.4s ease;
 }
 
 .fade-up.animate {
@@ -760,7 +760,7 @@ select.form-control {
 
 .zoom-out {
   transform: scale(1.1);
-  transition: var(--transition-slow);
+  transition: all 0.4s ease;
 }
 
 .zoom-out.animate {
