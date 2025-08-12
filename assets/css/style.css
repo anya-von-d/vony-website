@@ -314,6 +314,24 @@ img {
   }
 }
 
+/* White theme button for CTA section */
+.theme-btn-white {
+  background-color: #ffffff !important;
+  color: #5EC47E !important;
+  border: 2px solid #ffffff !important;
+}
+
+.theme-btn-white:hover {
+  background-color: #f8f9fa !important;
+  color: #4AB96A !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.theme-btn-white .position-absolute img {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(86deg) brightness(119%) contrast(119%);
+}
+
 /* Additional mobile touch improvements */
 @media (max-width: 768px) {
   .theme-btn {
