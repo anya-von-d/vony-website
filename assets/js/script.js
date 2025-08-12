@@ -24,6 +24,11 @@
         $(window).on('load', function() {
             $('.fullpage_loader').fadeOut(500);
         });
+        
+        // Fallback to ensure loader disappears
+        setTimeout(function() {
+            $('.fullpage_loader').fadeOut(500);
+        }, 2000);
     }
 
     // Mobile menu functionality
