@@ -85,6 +85,12 @@
 
     // Initialize animations
     function initAnimations() {
+        // Ensure all fade-up elements are immediately visible
+        $('.fade-up').addClass('animate').css({
+            'opacity': '1',
+            'transform': 'translateY(0)'
+        });
+        
         // Fade up animation on scroll
         function checkFadeUp() {
             $('.fade-up').each(function() {
