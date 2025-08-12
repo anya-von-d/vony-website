@@ -332,15 +332,22 @@ img {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(86deg) brightness(119%) contrast(119%);
 }
 
-/* Footer contact link styling */
-.footer-widget.contact-info ul li a {
-  color: #ffffff !important;
-  transition: color 0.3s ease;
-  text-decoration: none;
+/* Footer styling */
+.footer-section-five {
+  background-color: #1a1a1a !important;
 }
 
-.footer-widget.contact-info ul li a:hover {
+.footer-widget a {
+  transition: color 0.3s ease;
+}
+
+.footer-widget a:hover {
   color: #5EC47E !important;
+}
+
+.footer-widget .btn:hover {
+  background-color: #4AB96A !important;
+  transform: translateY(-2px);
 }
 
 /* Additional mobile touch improvements */
