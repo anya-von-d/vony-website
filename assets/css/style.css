@@ -332,7 +332,7 @@ img {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(86deg) brightness(119%) contrast(119%);
 }
 
-/* Section title centering */
+/* Section title centering - Override all existing styles */
 .section-title-block {
   text-align: center !important;
 }
@@ -341,6 +341,34 @@ img {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+/* Specific overrides for section titles */
+section .section-title-block .section-title,
+.feature-section-two .section-title,
+.services-section .section-title,
+.content .section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+section .section-title-block .section-sub-title,
+.feature-section-two .section-sub-title,
+.services-section .section-sub-title,
+.content .section-sub-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Override split-text class if it causes issues */
+.split-text.right {
+  text-align: center !important;
 }
 
 /* Footer styling */
