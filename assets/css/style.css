@@ -1306,9 +1306,16 @@ select.form-control {
   }
 }
 
+/* Force desktop navigation to show on medium screens and up */
+@media (min-width: 768px) {
+  .navbar-nav.d-none.d-md-flex {
+    display: flex !important;
+  }
+}
+
 /* Ensure desktop navigation is completely hidden on small screens */
 @media (max-width: 767.98px) {
-  .d-none.d-md-flex {
+  .navbar-nav.d-none.d-md-flex {
     display: none !important;
   }
   
