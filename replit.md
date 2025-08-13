@@ -81,6 +81,13 @@ The architecture is designed to be easily extensible into a full-stack applicati
 - Vertically centered checkbook image with title and paragraph using align-items-center
 - Reduced hero section top padding to 2rem for tighter spacing with header
 
+### Mobile Layout Optimization for How it Works Section
+- Modified step layout to stack numbers above titles on mobile screens (below 768px)
+- Changed flex direction to column and centered alignment for mobile devices
+- Adjusted font sizes: numbers to 2.5rem, titles to 1.4rem for better mobile readability
+- Improved paragraph text formatting with better line spacing for mobile viewing
+- Layout now gives paragraph text more room on small screens as requested
+
 ## Previous Changes (August 12, 2025)
 
 ### Content Focus Update

@@ -777,6 +777,38 @@ section .section-title-block .section-sub-title,
   margin-bottom: 1rem;
 }
 
+/* Mobile layout for How it Works section - stack number above title */
+@media (max-width: 767.98px) {
+  .services-item {
+    text-align: center;
+  }
+  
+  .services-item .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+  
+  .services-item .number {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    width: auto !important;
+  }
+  
+  .services-item .title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    width: auto !important;
+  }
+  
+  .services-item .des {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    width: auto !important;
+    text-align: center;
+  }
+}
+
 /* Features Section */
 .feature-section-two {
   padding: var(--section-padding) 0;
