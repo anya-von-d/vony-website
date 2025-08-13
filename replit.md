@@ -71,7 +71,7 @@ The architecture is designed to be easily extensible into a full-stack applicati
 - Updated hero section: "Lending Money to Friends Made Simple" 
 - Replaced generic P2P lending language with specific use cases: dinner bills, rent help, car repairs
 - Modified features section to showcase real-life lending scenarios
-- Updated call-to-action buttons to link directly to Vony app: https://app--vony-2307218f.base44.app
+- Updated call-to-action buttons to link to: https://anyavondiessl.com (changed from Vony app URL)
 
 ### Navigation Structure Finalized
 - Removed "About Us" from navigation menu for cleaner focus
