@@ -1180,3 +1180,77 @@ select.form-control {
 
 .z-n1 { z-index: -1; }
 .z-1 { z-index: 1; }
+
+/* Hero Checkbook Image Responsive Styles */
+.hero-image-container {
+  margin-top: -2rem;
+}
+
+.hero-checkbook-wrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.hero-checkbook-img {
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+  .hero-image-container {
+    margin-top: -1rem;
+  }
+  
+  .hero-checkbook-wrapper {
+    max-width: 450px;
+  }
+  
+  .hero-checkbook-img {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-image-container {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .hero-checkbook-wrapper {
+    max-width: 400px;
+  }
+  
+  .hero-checkbook-img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image-container {
+    margin-top: 1.5rem;
+  }
+  
+  .hero-checkbook-wrapper {
+    max-width: 350px;
+  }
+  
+  .hero-checkbook-img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image-container {
+    margin-top: 1rem;
+  }
+  
+  .hero-checkbook-wrapper {
+    max-width: 300px;
+  }
+  
+  .hero-checkbook-img {
+    max-height: 200px;
+  }
+}
