@@ -371,6 +371,35 @@ section .section-title-block .section-sub-title,
   text-align: center !important;
 }
 
+/* CTA Section Perfect Centering */
+.cta-section {
+  text-align: center !important;
+}
+
+.cta-section h2,
+.cta-section p,
+.cta-section .cta-buttons {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+.cta-section .container-fluid {
+  text-align: center !important;
+}
+
+.cta-section .row {
+  justify-content: center !important;
+}
+
+.cta-section .col-12 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
 /* Footer styling */
 .footer-section-five {
   background-color: #1a1a1a !important;
