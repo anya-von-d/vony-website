@@ -42,8 +42,8 @@
           <img src="img/logo/vony-logo.png" alt="Vony Logo" style="height: 40px; width: auto;">
         </a>
         
-        <!-- Desktop Navigation - Show on medium screens and up -->
-        <ul class="navbar-nav mb-0 d-flex flex-row mx-auto d-none d-md-flex" style="list-style: none; padding-left: 0;">
+        <!-- Desktop Navigation - Show on large screens (992px+) -->
+        <ul class="navbar-nav mb-0 d-flex flex-row mx-auto d-none d-lg-flex" style="list-style: none; padding-left: 0;">
           <li class="nav-item me-4"><a class="nav-link" href="index.html#use-cases">Uses</a></li>
           <li class="nav-item me-4"><a class="nav-link" href="index.html#how-it-works">How it Works</a></li>
           <li class="nav-item me-4"><a class="nav-link" href="index.html#features">Key Features</a></li>
@@ -58,15 +58,15 @@
             </a>
           </div>
           
-          <!-- Mobile Menu Toggle - Only show on small screens -->
-          <button class="navbar-toggler d-md-none border-0 bg-transparent p-1 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Mobile Menu Toggle - Only show on screens smaller than large (below 992px) -->
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent p-1 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </div>
       
-      <!-- Mobile Navigation Menu - Only show on small screens -->
-      <div class="collapse navbar-collapse d-md-none" id="mobileNavMenu">
+      <!-- Mobile Navigation Menu - Only show on screens smaller than large -->
+      <div class="collapse navbar-collapse d-lg-none" id="mobileNavMenu">
         <div class="container px-0">
           <ul class="navbar-nav py-3" style="list-style: none; padding-left: 0;">
             <li class="nav-item mb-2"><a class="nav-link" href="index.html#use-cases">Uses</a></li>

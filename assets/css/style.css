@@ -1306,9 +1306,9 @@ select.form-control {
   }
 }
 
-/* Ensure desktop navigation is completely hidden on small screens */
-@media (max-width: 767.98px) {
-  .d-none.d-md-flex {
+/* Ensure desktop navigation is completely hidden on smaller screens */
+@media (max-width: 991.98px) {
+  .d-none.d-lg-flex {
     display: none !important;
   }
   
@@ -1322,13 +1322,7 @@ select.form-control {
   }
 }
 
-/* Responsive navigation spacing adjustments */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .navbar-nav .nav-item {
-    margin-right: 2rem !important;
-  }
-}
-
+/* Navigation spacing for large screens */
 @media (min-width: 992px) {
   .navbar-nav .nav-item {
     margin-right: 3rem !important;
