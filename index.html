@@ -62,6 +62,10 @@
   <div class="fullpage_loader">
     <div class="loader"></div>
   </div>
+  <script>
+    // Hide loader immediately
+    document.querySelector('.fullpage_loader').style.display = 'none';
+  </script>
   <!-- loading section end -->
 
   <!-- header section start -->
@@ -134,11 +138,10 @@
     <section class="static-banner-section"
     style="transform: rotate(-1deg); margin-top: 0; margin-bottom: 0; padding: 2rem 0; background-color: #5EC47E;">
       <div class="d-flex align-items-center justify-content-center" style="background-color: #5EC47E;">
-        <h4 class="title me-5" style="color: #ffffff; margin: 0;">Coming Soon</h4>
-        <h4 class="title me-5" style="color: #ffffff; margin: 0;">Coming Soon</h4>
-        <h4 class="title me-5" style="color: #ffffff; margin: 0;">Coming Soon</h4>
-        <h4 class="title me-5" style="color: #ffffff; margin: 0;">Coming Soon</h4>
-        <h4 class="title" style="color: #ffffff; margin: 0;">Coming Soon</h4>
+        <h4 class="title" style="color: #ffffff; margin: 0; margin-right: 8rem;">COMING SOON</h4>
+        <h4 class="title" style="color: #ffffff; margin: 0; margin-right: 8rem;">COMING SOON</h4>
+        <h4 class="title" style="color: #ffffff; margin: 0; margin-right: 8rem;">COMING SOON</h4>
+        <h4 class="title" style="color: #ffffff; margin: 0;">COMING SOON</h4>
       </div>
     </section>
     <!-- trust indicators section end -->
@@ -444,17 +447,21 @@
   
   <!-- Immediate loader fallback -->
   <script>
-    // Ensure loader disappears even if other JS fails
+    // Hide loader immediately on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      var loader = document.querySelector('.fullpage_loader');
+      if (loader) {
+        loader.style.display = 'none';
+      }
+    });
+    
+    // Backup fallback
     setTimeout(function() {
       var loader = document.querySelector('.fullpage_loader');
       if (loader) {
-        loader.style.opacity = '0';
-        loader.style.visibility = 'hidden';
-        setTimeout(function() {
-          loader.style.display = 'none';
-        }, 500);
+        loader.style.display = 'none';
       }
-    }, 1000);
+    }, 100);
   </script>
 </body>
 
