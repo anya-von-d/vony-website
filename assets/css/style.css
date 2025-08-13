@@ -1183,7 +1183,7 @@ select.form-control {
 
 /* Hero Checkbook Image Responsive Styles */
 .hero-image-container {
-  margin-top: -2rem;
+  margin-top: 0;
 }
 
 .hero-checkbook-wrapper {
@@ -1200,7 +1200,7 @@ select.form-control {
 /* Responsive adjustments */
 @media (max-width: 1199px) {
   .hero-image-container {
-    margin-top: -1rem;
+    margin-top: 0;
   }
   
   .hero-checkbook-wrapper {
