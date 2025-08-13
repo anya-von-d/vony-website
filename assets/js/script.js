@@ -44,6 +44,27 @@
         $('#mobileNavMenu .nav-link').on('click', function() {
             $('#mobileNavMenu').removeClass('show');
             $('.navbar-toggler').attr('aria-expanded', 'false');
+            
+            // Smooth scroll to section if it's an anchor link
+            const href = $(this).attr('href');
+            if (href && href.startsWith('#')) {
+                const target = $(href);
+                if (target.length) {
+                    setTimeout(function() {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 80
+                        }, 800);
+                    }, 100);
+                }
+            }
+        });
+        
+        // Close menu when clicking outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.navbar').length && $('#mobileNavMenu').hasClass('show')) {
+                $('#mobileNavMenu').removeClass('show');
+                $('.navbar-toggler').attr('aria-expanded', 'false');
+            }
         });
 
         // Legacy mobile menu functionality (if needed)

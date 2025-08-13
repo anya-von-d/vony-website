@@ -1220,28 +1220,88 @@ select.form-control {
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: none;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #mobileNavMenu.show {
   display: block;
 }
 
+#mobileNavMenu .container {
+  padding: 0 1rem;
+}
+
+#mobileNavMenu .navbar-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mobileNavMenu .nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 0;
+  width: 100%;
+}
+
+#mobileNavMenu .nav-item:last-child {
+  border-bottom: none;
+}
+
 #mobileNavMenu .nav-link {
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  transition: all 0.3s ease;
+  border: none;
+  background: none;
 }
 
-#mobileNavMenu .nav-link:hover {
+#mobileNavMenu .nav-link:hover,
+#mobileNavMenu .nav-link:focus {
   color: #5EC47E;
+  background-color: rgba(94, 196, 126, 0.05);
+  transform: translateX(5px);
+}
+
+#mobileNavMenu .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5EC47E;
+  transition: width 0.3s ease;
+}
+
+#mobileNavMenu .nav-link:hover::after {
+  width: 100%;
 }
 
 /* Ensure desktop navigation is completely hidden on mobile */
 @media (max-width: 991.98px) {
   .d-none.d-lg-flex {
     display: none !important;
+  }
+  
+  /* Mobile navigation specific styles */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 }
 
