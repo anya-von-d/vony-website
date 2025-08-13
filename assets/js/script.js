@@ -36,8 +36,8 @@
         // Bootstrap navbar toggler for mobile menu
         $('.navbar-toggler').on('click', function(e) {
             e.preventDefault();
-            const target = $($(this).data('bs-target'));
-            const isOpen = target.hasClass('show');
+            var target = $($(this).data('bs-target'));
+            var isOpen = target.hasClass('show');
             
             if (isOpen) {
                 target.removeClass('show');
@@ -46,40 +46,22 @@
                 target.addClass('show');
                 $(this).attr('aria-expanded', 'true');
             }
-            
-            console.log('Toggler clicked, menu is now:', !isOpen ? 'open' : 'closed'); // Debug log
         });
         
-        // Close mobile menu when clicking on a nav link (using multiple approaches for reliability)
-        $(document).on('click touchend', '#mobileNavMenu .nav-link', function(e) {
-            console.log('Mobile nav link clicked'); // Debug log
-            
-            // Close the dropdown menu immediately
-            $('#mobileNavMenu').removeClass('show').removeClass('collapse').removeClass('collapsing');
-            $('.navbar-toggler').attr('aria-expanded', 'false').removeClass('active');
-            
-            // Handle smooth scrolling for anchor links
-            const href = $(this).attr('href');
-            if (href && href.startsWith('#')) {
-                e.preventDefault();
-                const target = $(href);
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - 80
-                    }, 800);
-                }
-            }
-            // For external links (like contact.html), let the default behavior happen
+        // Close mobile menu when clicking on a nav link - SIMPLIFIED VERSION
+        $('#mobileNavMenu').on('click', '.nav-link', function() {
+            // Force close the mobile menu
+            $('#mobileNavMenu').removeClass('show');
+            $('.navbar-toggler').attr('aria-expanded', 'false');
         });
         
-        // Additional fallback - direct binding after DOM is ready
-        setTimeout(function() {
-            $('#mobileNavMenu .nav-link').off('click.mobile').on('click.mobile', function(e) {
-                console.log('Fallback mobile nav click'); // Debug log
+        // Additional event handler for immediate closure
+        $(document).on('click', '#mobileNavMenu a', function() {
+            setTimeout(function() {
                 $('#mobileNavMenu').removeClass('show');
                 $('.navbar-toggler').attr('aria-expanded', 'false');
-            });
-        }, 100);
+            }, 50);
+        });
         
         // Close menu when clicking outside
         $(document).on('click', function(e) {
