@@ -33,6 +33,20 @@
 
     // Mobile menu functionality
     function initMobileMenu() {
+        // Bootstrap navbar toggler for mobile menu
+        $('.navbar-toggler').on('click', function() {
+            const target = $($(this).data('bs-target'));
+            target.toggleClass('show');
+            $(this).attr('aria-expanded', target.hasClass('show'));
+        });
+        
+        // Close mobile menu when clicking on a nav link
+        $('#mobileNavMenu .nav-link').on('click', function() {
+            $('#mobileNavMenu').removeClass('show');
+            $('.navbar-toggler').attr('aria-expanded', 'false');
+        });
+
+        // Legacy mobile menu functionality (if needed)
         $('.bars').on('click', function() {
             $('.mobile-menu-main').addClass('active');
             $('.mobile-menu-overlay').addClass('active');
