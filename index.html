@@ -77,21 +77,41 @@
           <img src="img/logo/vony-logo.png" alt="Vony Logo" style="height: 40px; width: auto;">
         </a>
         
-        <ul class="navbar-nav mb-0 d-flex flex-row mx-auto" style="list-style: none; padding-left: 0;">
+        <!-- Desktop Navigation -->
+        <ul class="navbar-nav mb-0 d-flex flex-row mx-auto d-none d-lg-flex" style="list-style: none; padding-left: 0;">
           <li class="nav-item me-5"><a class="nav-link" href="#use-cases">Uses</a></li>
           <li class="nav-item me-5"><a class="nav-link" href="#how-it-works">How it Works</a></li>
           <li class="nav-item me-5"><a class="nav-link" href="#features">Key Features</a></li>
           <li class="nav-item me-5"><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
 
-        <div class="join-with-us">
-          <a href="https://anyavondiessl.com" class="join-with-us-btn" target="_blank">
-            Get Started
-          </a>
+        <!-- Mobile Navigation Toggle and Get Started -->
+        <div class="d-flex align-items-center">
+          <div class="join-with-us me-3">
+            <a href="https://anyavondiessl.com" class="join-with-us-btn" target="_blank">
+              Get Started
+            </a>
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent p-1" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation Menu -->
+      <div class="collapse navbar-collapse d-lg-none" id="mobileNavMenu">
+        <div class="container px-0">
+          <ul class="navbar-nav py-3" style="list-style: none; padding-left: 0;">
+            <li class="nav-item mb-2"><a class="nav-link" href="#use-cases">Uses</a></li>
+            <li class="nav-item mb-2"><a class="nav-link" href="#how-it-works">How it Works</a></li>
+            <li class="nav-item mb-2"><a class="nav-link" href="#features">Key Features</a></li>
+            <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
       </div>
     </nav>
-    <!-- mobile navbar removed - now always horizontal -->
   </header>
   <!-- header section end -->
 
