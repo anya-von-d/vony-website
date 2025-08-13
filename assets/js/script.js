@@ -40,23 +40,24 @@
             $(this).attr('aria-expanded', target.hasClass('show'));
         });
         
-        // Close mobile menu when clicking on a nav link
-        $('#mobileNavMenu .nav-link').on('click', function() {
+        // Close mobile menu when clicking on a nav link (using event delegation)
+        $(document).on('click', '#mobileNavMenu .nav-link', function(e) {
+            // Close the dropdown menu immediately
             $('#mobileNavMenu').removeClass('show');
             $('.navbar-toggler').attr('aria-expanded', 'false');
             
-            // Smooth scroll to section if it's an anchor link
+            // Handle smooth scrolling for anchor links
             const href = $(this).attr('href');
             if (href && href.startsWith('#')) {
+                e.preventDefault();
                 const target = $(href);
                 if (target.length) {
-                    setTimeout(function() {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top - 80
-                        }, 800);
-                    }, 100);
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 80
+                    }, 800);
                 }
             }
+            // For external links (like contact.html), let the default behavior happen
         });
         
         // Close menu when clicking outside
