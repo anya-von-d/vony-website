@@ -64,7 +64,22 @@ Preferred communication style: Simple, everyday language.
 
 The architecture is designed to be easily extensible into a full-stack application when backend functionality for user registration, loan management, and payment processing is needed.
 
-## Recent Changes (August 12, 2025)
+## Recent Changes (August 13, 2025)
+
+### Mobile Navigation Enhancement
+- Updated responsive navigation breakpoints to show full menu on medium screens and larger (768px+)
+- Hamburger menu now only appears on small/mobile screens (below 768px) where navigation items don't fit
+- Adjusted navigation spacing for different screen sizes: 2rem margin on tablets, 3rem on desktop
+- Changed mobile menu trigger from d-lg-none to d-md-none for better responsive behavior
+- Improved mobile dropdown functionality with enhanced JavaScript event handling
+
+### Hero Section Spacing Adjustments
+- Reduced hero section bottom padding from 10rem to 3rem to 1rem for tighter spacing with "Coming Soon" banner
+- Added 2rem top margin to "Coming Soon" banner for better visual separation
+- Vertically centered checkbook image with title and paragraph using align-items-center
+- Reduced hero section top padding to 2rem for tighter spacing with header
+
+## Previous Changes (August 12, 2025)
 
 ### Content Focus Update
 - Completely rewrote website content to focus on Vony's actual purpose: personal lending between friends and family

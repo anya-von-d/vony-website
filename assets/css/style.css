@@ -1306,9 +1306,9 @@ select.form-control {
   }
 }
 
-/* Ensure desktop navigation is completely hidden on mobile */
-@media (max-width: 991.98px) {
-  .d-none.d-lg-flex {
+/* Ensure desktop navigation is completely hidden on small screens */
+@media (max-width: 767.98px) {
+  .d-none.d-md-flex {
     display: none !important;
   }
   
@@ -1319,6 +1319,19 @@ select.form-control {
     left: 0;
     right: 0;
     z-index: 1000;
+  }
+}
+
+/* Responsive navigation spacing adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-nav .nav-item {
+    margin-right: 2rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-right: 3rem !important;
   }
 }
 
