@@ -400,6 +400,41 @@ section .section-title-block .section-sub-title,
   text-align: center !important;
 }
 
+/* About Section Perfect Centering */
+#about-us {
+  text-align: center !important;
+}
+
+#about-us .container-fluid {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#about-us .section-title-block {
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+#about-us .section-title,
+#about-us p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+#about-us .row {
+  justify-content: center !important;
+  margin: 0 !important;
+}
+
+#about-us .col-12 {
+  padding: 0 !important;
+  text-align: center !important;
+}
+
 /* Footer styling */
 .footer-section-five {
   background-color: #1a1a1a !important;
