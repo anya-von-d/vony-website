@@ -1442,3 +1442,53 @@ select.form-control {
     max-height: 200px;
   }
 }
+
+/* Mobile-centered hero layout - when image can't fit on side */
+@media (max-width: 991px) {
+  .banner-section-three .row {
+    flex-direction: column !important;
+  }
+  
+  .banner-section-three .col-xl-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .banner-section-three .text {
+    text-align: center !important;
+  }
+  
+  .banner-section-three .top-title {
+    text-align: center !important;
+  }
+  
+  .banner-section-three h1.title {
+    text-align: center !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .banner-section-three p {
+    text-align: center !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .banner-section-three .hero-buttons {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  /* Image appears below text on mobile */
+  .banner-section-three .col-xl-6:first-child {
+    order: 1 !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .banner-section-three .col-xl-6:last-child {
+    order: 2 !important;
+    margin-top: 2rem !important;
+  }
+}
