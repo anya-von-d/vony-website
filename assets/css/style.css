@@ -1417,15 +1417,15 @@ select.form-control {
 
 @media (max-width: 768px) {
   .hero-image-container {
-    margin-top: 1.5rem;
+    margin-top: 0 !important;
   }
   
   .hero-checkbook-wrapper {
-    max-width: 450px;
+    max-width: 550px !important;
   }
   
   .hero-checkbook-img {
-    max-height: 350px;
+    max-height: 450px !important;
   }
   
   /* Make title even narrower on smaller screens for more line breaks */
@@ -1436,15 +1436,15 @@ select.form-control {
 
 @media (max-width: 576px) {
   .hero-image-container {
-    margin-top: 1rem;
+    margin-top: 0 !important;
   }
   
   .hero-checkbook-wrapper {
-    max-width: 400px;
+    max-width: 550px !important;
   }
   
   .hero-checkbook-img {
-    max-height: 300px;
+    max-height: 450px !important;
   }
   
   /* Make title narrower on mobile phones for multi-line effect */
@@ -1494,20 +1494,25 @@ select.form-control {
   /* Image appears below text on mobile */
   .banner-section-three .col-xl-6:first-child {
     order: 1 !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 0 !important;
   }
   
   .banner-section-three .col-xl-6:last-child {
     order: 2 !important;
-    margin-top: 2rem !important;
+    margin-top: 0 !important;
   }
   
   /* Make image bigger on mobile */
   .hero-checkbook-wrapper {
-    max-width: 500px !important;
+    max-width: 600px !important;
   }
   
   .hero-checkbook-img {
-    max-height: 400px !important;
+    max-height: 500px !important;
+  }
+  
+  /* Remove gap between button and image */
+  .hero-image-container {
+    margin-top: 0 !important;
   }
 }
