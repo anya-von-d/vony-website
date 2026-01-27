@@ -55,6 +55,27 @@
   }
 }
 
+/* Icon Circle without border */
+.icon-circle-no-border {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #35B276;
+  border-radius: 18px;
+  color: #F3F0EC;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .icon-circle-no-border {
+    width: 56px;
+    height: 56px;
+    font-size: 1.2rem;
+  }
+}
+
 /* Reset & Base Styles */
 * {
   margin: 0;
