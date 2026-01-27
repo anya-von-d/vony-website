@@ -989,6 +989,7 @@ section .section-title-block .section-sub-title,
 /* Contact Info */
 .contact-info-section {
   padding: 2rem 0;
+  background: #F4F1EE;
 }
 
 .contact-info ul {
@@ -1018,6 +1019,7 @@ section .section-title-block .section-sub-title,
 /* Contact Form */
 .contact-form-section {
   padding: 2rem 0 var(--section-padding) 0;
+  background: #F4F1EE;
 }
 
 .form-main {
