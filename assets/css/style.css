@@ -1229,6 +1229,13 @@ select.form-control {
   transition: box-shadow 0.15s ease-in-out;
 }
 
+/* Hide hamburger menu on screens 768px and larger */
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
