@@ -778,7 +778,7 @@ section .section-title-block .section-sub-title,
 /* Services Section (How It Works) */
 .services-section {
   padding: var(--section-padding) 0;
-  background: var(--vony-light-gray);
+  background: #FCFBFA;
 }
 
 .services-main {
