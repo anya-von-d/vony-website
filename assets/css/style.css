@@ -1569,3 +1569,10 @@ select.form-control {
     margin-top: 0 !important;
   }
 }
+
+/* Hide checkbook on small screens where it stacks below the title */
+@media (max-width: 767.98px) {
+  .hero-image-container {
+    display: none !important;
+  }
+}
